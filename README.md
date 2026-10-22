@@ -4,6 +4,8 @@
 
 A small Python assistant for voice commands, web search, Wikipedia lookup and Windows Office launch. Originally built by Adil Sukumar; this public edition separates command parsing from microphone and desktop actions.
 
+<a id="try-it"></a>
+
 ## <img src="assets/readme/icon-terminal.svg" width="30" height="30" alt=""/> Try it
 
 <p><picture><source media="(max-width: 600px)" srcset="assets/readme/modes-mobile.svg"/><img src="assets/readme/modes.svg" width="100%" alt="Text mode: standard library, no microphone. Voice mode: optional dependencies, Google recognition and local speech output."/></picture></p>
@@ -29,6 +31,8 @@ python atlas.py
 
 PyAudio requires a working PortAudio/audio-device setup. Use text mode when no microphone is available. Word and Excel must be installed locally for their launch commands.
 
+<a id="commands"></a>
+
 ## <img src="assets/readme/icon-voice.svg" width="30" height="30" alt=""/> Commands
 
 <p><picture><source media="(max-width: 600px)" srcset="assets/readme/commands-mobile.svg"/><img src="assets/readme/commands.svg" width="100%" alt="Everyday utilities, web and Wikipedia, installed Office applications and YouTube, sleep and exit."/></picture></p>
@@ -46,11 +50,15 @@ PyAudio requires a working PortAudio/audio-device setup. Use text mode when no m
 
 `--dry-run` suppresses application launch, browser navigation and Wikipedia requests. `--once` processes one supplied command without opening a microphone. Sleep-mode wake matching checks the word Atlas; it does not authenticate the speaker.
 
+<a id="how-commands-work"></a>
+
 ## <img src="assets/readme/icon-code.svg" width="30" height="30" alt=""/> How commands work
 
 <p><picture><source media="(max-width: 600px)" srcset="assets/readme/pipeline-mobile.svg"/><img src="assets/readme/pipeline.svg" width="100%" alt="Input, parse to an explicit Action, then execute or inspect through dry-run."/></picture></p>
 
 The parser returns an explicit action type. Microphone setup and desktop actions are kept separate from command parsing so the command path can be inspected and tested.
+
+<a id="privacy-and-configuration"></a>
 
 ## <img src="assets/readme/icon-cloud.svg" width="30" height="30" alt=""/> Privacy and configuration
 
@@ -69,6 +77,8 @@ The optional `send_email` Python helper requires explicit recipient details and 
 - Added dependency-free command tests and dry-run operation.
 
 This is a command-based educational assistant, not an unrestricted autonomous desktop agent. Microphone and physical Office launch need testing on the target computer.
+
+<a id="explore-the-code"></a>
 
 ## <img src="assets/readme/icon-docs.svg" width="30" height="30" alt=""/> Explore the code
 
